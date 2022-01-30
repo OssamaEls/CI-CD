@@ -41,6 +41,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
+          role-to-assume: arn:aws:iam::426117206556:role/s3-access-keys
           
       - name: Print the list of S3 buckets
         run: aws s3 ls
