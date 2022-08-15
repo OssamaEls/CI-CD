@@ -60,7 +60,6 @@ jobs:
       - name: Print the list of S3 buckets
         run: aws s3 ls
 
-
 #    steps:
 #      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
 #      - uses: actions/checkout@v2
