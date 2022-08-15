@@ -60,6 +60,10 @@ jobs:
       - name: Print the list of S3 buckets
         run: aws s3 ls
 
+      - name: Login to Amazon ECR Private
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
 #    steps:
 #      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
 #      - uses: actions/checkout@v2
