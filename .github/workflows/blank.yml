@@ -38,7 +38,7 @@ jobs:
 
       - name: Lint and formatting with black flake8
         run: |
-          black . --max-line-length=127
+          black . --line-length=127
           # stop the build if there are Python syntax errors or undefined names
           flake8 . --count --select=E9,F63,F7,F82 --max-complexity=10 --max-line-length=127 --show-source --statistics
 
