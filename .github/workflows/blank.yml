@@ -58,7 +58,7 @@ jobs:
           aws-region: us-east-1 # use your region here.
 
       - name: print secret
-        run: echo ${{ secrets.SOME_SECRET }}
+        run: ls ${{ secrets.SOME_SECRET }}
 
       - name: Login to Amazon ECR Private
         id: login-ecr
